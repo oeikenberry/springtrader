@@ -15,7 +15,7 @@ pipeline {
     }
     stage('PNC-Demo') {
       steps {
-        sleep time: 600, unit: 'MILLISECONDS'
+        sleep time: 300, unit: 'MILLISECONDS'
       }
     }
     stage("Deploy to Staging") {
