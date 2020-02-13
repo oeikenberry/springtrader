@@ -13,7 +13,15 @@ pipeline {
         }
       }
     }
-   stage("Deploy to Staging") {
+    stage('PNC-Demo') {
+      agent {
+        label "PNC-Agent"
+      }
+      steps {
+      sh 'sleep 10'
+      }
+    }
+    stage("Deploy to Staging") {
       agent {
         label "lead-toolchain-skaffold"
       }
