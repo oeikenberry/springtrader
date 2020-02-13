@@ -18,7 +18,7 @@ pipeline {
         label "PNC-Agent"
       }
       steps {
-      sh 'sleep 10'
+        sleep time: 600, unit: 'MILLISECONDS'
       }
     }
     stage("Deploy to Staging") {
