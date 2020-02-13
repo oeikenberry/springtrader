@@ -14,9 +14,6 @@ pipeline {
       }
     }
     stage('PNC-Demo') {
-      agent {
-        label "PNC-Agent"
-      }
       steps {
         sleep time: 600, unit: 'MILLISECONDS'
       }
